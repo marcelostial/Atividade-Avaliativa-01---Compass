@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./index.css" rel="stylesheet">
+        <script src="./index.js" type="module" defer></script>
+        <title>Compass - IMC</title>
+    </head>
+    <body onselectstart="return false">
+        <section id="areaIMC">
+            <div id="caixaIMC">
+                <h1 id="tituloCalcule">Calcule seu IMC</h1>
+                <div id="inputIMC">
+                    <div id="areaPeso">
+                        <label id="peso">Peso</label>
+                        <input type="range" id="inputPeso" value="0" name="pesoIMC" class="inputIMC" min="0" max="150" oninput="displayPeso.value=value" onchange="displayPeso.value=value">
+                        <input type="text" id="displayPeso" value="0" readonly>
+                    </div>
+                    <div id="areaAltura">
+                        <label id="altura">Altura</label>
+                        <input type="range" id="inputAltura" name="alturaIMC" class="inputIMC" min="0" max="250" oninput="displayAltura.value=value" onchange="displayAltura.value=value">
+                        <input type="text" id="displayAltura" value="0.00">
+                    </div>
+                    <input id="inputCalcular" type="submit" value="Calcular">
+                </div>
+                <div id="areaReposta">
+                    <div id="calculoIMC">IMC: 24.17</div> 
+                    <div id="repostaIMC">(Peso Normal)</div>
+                </div>
+            </div>
+
+        </section>
+    </body>
+</html>
