@@ -1,7 +1,8 @@
 function imcCalculationlogical(){
     const $ = document.querySelector.bind(document);
    
-    const altura  = $("#inputAltura");
+    let peso = $("#inputPeso");
+    let altura  = $("#inputAltura");
     const calcular = $("#inputCalcular");
 
     const imcCalculo = $("#calculoIMC");
@@ -9,8 +10,7 @@ function imcCalculationlogical(){
     
     calcular.addEventListener("click", () => { 
 
-    var imc = peso / (altura * altura);
-
+    let imc = peso / (altura * altura);
 
     imcCalculo.textContent=`IMC: ${imc.toFixed()}`;
 
@@ -39,7 +39,5 @@ function imcCalculationlogical(){
         }   
 
     })
-
-    console.log(imc)
 }
 

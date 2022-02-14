@@ -27,7 +27,11 @@
 }
 
 #tituloCalcule{
-    color: black;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 60px;
 }
 
 #inputIMC{
@@ -67,4 +71,34 @@
     background: #F7B718;
     border-radius: 4px;
     border: 0;
+    width: 100%;
+    height: 5vh;
+}
+
+.inputIMC[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.inputIMC[type=range]::-webkit-slider-thumb{
+    border-radius: 50%;
+    background-color: orange;
+}
+
+input#displayPeso{
+    font-size: 1em;
+    color: #F7B718;
+    width: 10%;
+}
+input#displayAltura{
+    font-size: 1em;
+    color: #F7B718;
+    width: 10%;
 }
